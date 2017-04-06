@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Serif+Pro');
+
+#container{
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#header{
+  position: relative;
+  padding: 60px 0px 20px 0px;
+}
+
+img{
+  position: relative;
+  border: 2px solid darkgray;
+  height: auto;
+  float: right;
+}
+
+body{
+  position: relative;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+}
+
+nav{
+  font-size: 20px;
+  background-color: lightgray;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid black;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li{
+  display: inline-block;
+  border-right: 5px solid rgb(224,224,224);
+}
+
+nav li:last-child{
+  border-right: none;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav a:visited{
+  color: darkblue;
+}
+
+a{
+  color: green;
+}
+
+a:hover{
+  color: gray;
+}
+
+a:visited{
+  color: blue;
+}
+
+main{
+  position: relative;
+}
+
+#education p{
+  margin: 0px 0px 5px 0px;
+}
+
+#work-and-leadership p, ul{
+  margin: 0px 0px 5px 0px;
+}
+
+#skills-activities-interests p{
+  margin: 0px 0px 5px 0px;
+}
+ #skills-activities-interests{
+   margin-bottom: 30px;
+ }
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold 700;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+section{
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 3px solid darkgray;
+}
+
+section:hover{
+  background-color: lightgray;
+}
+
+h2{
+  font-size: 25px;
+}
