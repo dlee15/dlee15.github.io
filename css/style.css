@@ -1,54 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body{
   position: relative;
-  font-family: 'Source Serif Pro', serif;
-  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  overflow: auto;
+  line-height: 200%;
+}
+
+#blacktee, #bluetee, #pinktee, #yellowtee, #blackhat, #whitehat{
+  padding-bottom: 130px;
+}
+
+.blacktee:hover, .bluetee:hover, .pinktee:hover, .yellowtee:hover{
+  content: url('../photos/tshirtback.jpg');
+}
+
+.blackhat:hover{
+  content: url('../photos/blackhatback.jpg');
+}
+
+.whitehat:hover{
+  content: url('../photos/whitehatback.jpg');
 }
 
 #container{
   max-width: 960px;
-  min-width: 750px;
+  min-width: 400px;
   margin: 0 auto;
 }
 
 a{
-  color: green;
-}
-
-a:visited{
-  color: blue;
+  color: #0099ff;
 }
 
 a:hover{
-  color: gray;
+  color: black;
 }
 
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cormorant SC', serif;
   font-style: bold 700;
-  font-size: 40px;
+  font-size: 85px;
   margin-top: 0;
 }
 
 h2{
-  font-size: 25px;
+  font-size: 35px;
 }
 
 img{
-  position: absolute;
-  border: 2px solid darkgray;
-  top: 0;
-  right: 0;
-  margin-top: 35px;
-  margin-right: 0px;
+  position: relative;
+  border: 1px solid #F5F5F5;
+  float: left;
+  margin-right: 10px;
 }
-
 
 header{
   position: relative;
-  padding: 40px 10px 0px 0px;
-  min-height: 200px;
+  padding: 40px 0px 0px 0px;
 }
 
 nav{
@@ -56,45 +69,35 @@ nav{
   min-width: 750px;
   margin: 0 auto;
   font-size: 20px;
-  background-color: darkgray;
-  position: fixed;
-  top: 0;
-  z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold 700;
+  background-color: #F5F5F5;
+  position: relative;
   width: 100%;
   height: auto;
+  letter-spacing: 2px;
 }
 
 nav ul{
   list-style-type: none;
   overflow: auto;
-  margin: 0;
   padding-left: 0;
 }
 
 nav li{
   display: inline-block;
-  border-right: 5px solid white;
-  width: 313px;
   text-align: center;
-  padding: 10px 0px 0px 10px;
-}
-
-nav li:last-child{
-  border-right: none;
+  width: 230px;
+  padding: 10px 0px;
 }
 
 nav a{
-  color: black;
+  color: #696969;
   text-decoration: none;
 }
 
-nav a:visited{
-  color: darkblue;
-}
-
 nav a:hover{
-  text-decoration: underline;
-  color: gray;
+  color: black;
 }
 
 main{
@@ -102,21 +105,7 @@ main{
 }
 
 section{
-  margin-bottom: 10px;
-  padding: 10px 0px 0px 10px;
-  border: 3px solid darkgray;
-}
-
-section:hover{
-  background-color: lightgray;
-}
-
-
-#education{
-  clear: left;
-  padding-bottom: 10px;
-}
-
-#education p{
-  margin: 5px;
+  margin-bottom: 20px;
+  padding: 0px 30px;
+  border: 3px solid #E8E8E8;
 }

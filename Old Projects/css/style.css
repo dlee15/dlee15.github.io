@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Serif+Pro');
+
+body{
+  position: relative;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+}
+
+#container{
+  max-width: 960px;
+  min-width: 750px;
+  margin: 0 auto;
+}
+
+a{
+  color: green;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  color: gray;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold 700;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+h2{
+  font-size: 25px;
+}
+
+img{
+  position: absolute;
+  border: 2px solid darkgray;
+  top: 0;
+  right: 0;
+  margin-top: 35px;
+  margin-right: 0px;
+}
+
+
+header{
+  position: relative;
+  padding: 40px 10px 0px 0px;
+  min-height: 200px;
+}
+
+nav{
+  max-width: 960px;
+  min-width: 750px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: darkgray;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li{
+  display: inline-block;
+  border-right: 5px solid white;
+  width: 313px;
+  text-align: center;
+  padding: 10px 0px 0px 10px;
+}
+
+nav li:last-child{
+  border-right: none;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+}
+
+nav a:visited{
+  color: darkblue;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: gray;
+}
+
+main{
+  position: relative;
+}
+
+section{
+  margin-bottom: 10px;
+  padding: 10px 0px 0px 10px;
+  border: 3px solid darkgray;
+}
+
+section:hover{
+  background-color: lightgray;
+}
+
+
+#education{
+  clear: left;
+  padding-bottom: 10px;
+}
+
+#education p{
+  margin: 5px;
+}
