@@ -8,14 +8,16 @@
   }
 
   #container {
-    border: 0;
     max-width: 320px;
-    margin: 0;
+    min-width: 0px;
+    border: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 100%;
   }
 
   nav{
-    max-width: 305px;
+    width: 100%;
     min-width: 0px;
     letter-spacing: 0px;
     margin-left: 0px;
@@ -24,20 +26,24 @@
   nav li{
     font-size: 10px;
     display: inline-block;
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: center;
-    width: 68px;
+    width: 22.5%;
   }
 
   section{
-    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    /*found this online to include padding/margin into the max width*/
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid #E8E8E8;
     padding: 0px 10px;
-    border: 3px solid #E8E8E8;
-    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   #blacktee, #bluetee, #pinktee, #yellowtee, #blackhat, #whitehat{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   #blacktee p, #bluetee p, #pinktee p, #yellowtee p, #blackhat p, #whitehat p{
@@ -46,8 +52,15 @@
   }
 
   header h1 {
-    font-size: 35px;
-    max-width: 300px;
+    font-size: 45px;
+    max-width: 320px;
+    padding: 0;
+    line-height: .7;
+  }
+
+  header{
+    position: relative;
+    padding: 20px 0px 0px 0px;
   }
 
   h2{
