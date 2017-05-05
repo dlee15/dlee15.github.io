@@ -1,8 +1,38 @@
 @media (max-width: 320px) {
+/*
+  A mobile design is going to start with an @media query, which
+  sets a condition - - in this case, max-width can be no bigger
+  than 320px (the size of an iPhone 5).
+*/
+
   body {
     font-family: sans-serif;
     font-size: 24px;
   }
+
+  /*
+    Whenever we write rules, for our mobile design, we are over-
+    writing rules which appear in the stylesheet for our web
+    version. In this case, we want to increase our font size to
+    24px (in the screen.css, the font-size set on body is 16px).
+  */
+
+  /*
+    If a rule does not need to be changed from the screen to
+    mobile (i.e. we want the text color to remain the same),
+    you do not need to re-write the rule in your mobile style
+    sheet. The property will be inherited from the screen.css.
+  */
+
+  /*
+    When you overwrite rules, you must be overwriting the exact
+    property. For instance, if in screen.css you set an element's
+    margin as such:
+    margin-left: 10px;
+    You cannot overwrite the property so using:
+    margin: 0 0 0 0;
+  */
+
   p, address {
     line-height: 1.5;
   }
@@ -21,14 +51,6 @@
 
   header span {
     display: inline;
-    /*
-      when making an element 're-appear' in mobile (because it has been
-      hidden using display: none; in screen.css), always return the
-      element to its default display state - - in this case, span is an
-      inline element, so we make it display as inline.
-      Of course, if your design calls for the element to be block or
-      inline-block for the sake of your design, that's okay, too.
-    */
   }
 
   img.mobile {
@@ -37,4 +59,15 @@
     vertical-align: middle;
   }
 
+  #video {
+    display: none;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer a[href^="tel"] {
+    display: block;
+  }
 }

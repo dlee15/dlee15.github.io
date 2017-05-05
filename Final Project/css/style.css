@@ -12,12 +12,7 @@ body{
 }
 
 #blacktee, #bluetee, #pinktee, #yellowtee, #blackhat, #whitehat{
-  padding-bottom: 55px;
-}
 
-#blacktee p, #bluetee p, #pinktee p, #yellowtee p, #blackhat p, #whitehat p{
-  padding-left: 230px;
-  padding-top: 35px;
 }
 
 .blacktee:hover, .bluetee:hover, .pinktee:hover, .yellowtee:hover{
@@ -66,7 +61,7 @@ img{
 
 header{
   position: relative;
-  padding: 40px 0px 0px 10px;
+  padding: 40px 0px 0px 0px;
 }
 
 nav{
@@ -110,7 +105,6 @@ main{
 }
 
 section{
-  margin-bottom: 20px;
   padding: 0px 30px;
   border: 3px solid #E8E8E8;
 }
