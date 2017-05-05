@@ -1,73 +1,69 @@
-@media (max-width: 320px) {
-/*
-  A mobile design is going to start with an @media query, which
-  sets a condition - - in this case, max-width can be no bigger
-  than 320px (the size of an iPhone 5).
-*/
-
+@media screen and (max-width: 320px) {
   body {
-    font-family: sans-serif;
-    font-size: 24px;
+    font-size: 12px;
   }
 
-  /*
-    Whenever we write rules, for our mobile design, we are over-
-    writing rules which appear in the stylesheet for our web
-    version. In this case, we want to increase our font size to
-    24px (in the screen.css, the font-size set on body is 16px).
-  */
-
-  /*
-    If a rule does not need to be changed from the screen to
-    mobile (i.e. we want the text color to remain the same),
-    you do not need to re-write the rule in your mobile style
-    sheet. The property will be inherited from the screen.css.
-  */
-
-  /*
-    When you overwrite rules, you must be overwriting the exact
-    property. For instance, if in screen.css you set an element's
-    margin as such:
-    margin-left: 10px;
-    You cannot overwrite the property so using:
-    margin: 0 0 0 0;
-  */
-
-  p, address {
+  p{
     line-height: 1.5;
   }
 
-  #wrapper {
+  #container {
     border: 0;
     max-width: 320px;
     margin: 0;
-    padding: 0.5em;
+    padding: 0;
+  }
+
+  nav{
+    max-width: 305px;
+    min-width: 0px;
+    letter-spacing: 0px;
+    margin-left: 0px;
+  }
+
+  nav li{
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    width: 68px;
+  }
+
+  section{
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border: 3px solid #E8E8E8;
+    max-width: 280px;
+  }
+
+  #blacktee, #bluetee, #pinktee, #yellowtee, #blackhat, #whitehat{
+    padding-bottom: 10px;
+  }
+
+  #blacktee p, #bluetee p, #pinktee p, #yellowtee p, #blackhat p, #whitehat p{
+    padding-left: 0px;
+    padding-top: 0px;
   }
 
   header h1 {
-    font-size: 125%;
-    line-height: 1.5;
+    font-size: 35px;
+    max-width: 300px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  h3{
+    font-size: 17px;
   }
 
   header span {
     display: inline;
   }
 
-  img.mobile {
-    width: 24px;
+  img {
+    width: 280px;
     height: auto;
-    vertical-align: middle;
-  }
-
-  #video {
-    display: none;
-  }
-
-  footer p {
-    display: none;
-  }
-
-  footer a[href^="tel"] {
-    display: block;
   }
 }
